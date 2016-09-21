@@ -209,7 +209,7 @@ extension ViewController : UITableViewDelegate {
             let treeModel = dataArray[indexPath.section] as! TreeModel
             let tmpIsExpanded = !treeModel.isExpanded
             
-            for var i = 0; i < dataArray.count; i++ {
+            for i in 0 ..< dataArray.count   {
                 let treeModeli = dataArray[i] as! TreeModel
                 if treeModeli.isExpanded {
                     treeModeli.isExpanded = false
